@@ -1,0 +1,9 @@
+.link {
+  color: var(--text-color);
+  font-weight: bold;
+  text-decoration: none;
+
+  :last-child {
+    color: var(--primary-color);
+  }
+}
