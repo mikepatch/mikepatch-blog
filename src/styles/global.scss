@@ -1,0 +1,19 @@
+@use 'scss-reset/reset';
+@import 'common';
+@import '_variables';
+
+:root {
+  --primary-color: #91c788;
+  --background-color: #393e46;
+  --text-color: #f8f8f8;
+}
+
+[data-theme='light'] {
+  --background-color: #f8f8f8;
+  --text-color: #393e46;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
