@@ -6,11 +6,13 @@
   --primary-color: #91c788;
   --background-color: #393e46;
   --text-color: #f8f8f8;
+  --theme-icon-hover: #fff;
 }
 
 [data-theme='light'] {
   --background-color: #f8f8f8;
   --text-color: #393e46;
+  --theme-icon-hover: hsl(210 10% 15%);
 }
 
 body {
