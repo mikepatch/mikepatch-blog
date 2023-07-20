@@ -1,0 +1,13 @@
+@import 'common';
+
+.wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: $space-md;
+}
+
+.iconWrapper {
+  display: flex;
+  gap: $space-sm;
+}

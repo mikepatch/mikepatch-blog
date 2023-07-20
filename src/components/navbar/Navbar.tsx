@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 
+import styles from './navbar.module.scss';
 import Logo from './logo';
 import NavList from './navList';
 import BurgerButton from './burgerButton';
@@ -14,10 +15,12 @@ export default function Navbar() {
   const closeNav = () => setIsOpen(false);
 
   return (
-    <nav>
+    <nav className={styles.wrapper}>
       <Logo />
-      <BurgerButton isOpen={isOpen} toggleNav={toggleNav} />
-      <ThemeButton />
+      <div className={styles.iconWrapper}>
+        <ThemeButton />
+        <BurgerButton isOpen={isOpen} toggleNav={toggleNav} />
+      </div>
       <NavList isOpen={isOpen} variant="desktop" closeNav={closeNav} />
       <NavList isOpen={isOpen} variant="mobile" closeNav={closeNav} />
     </nav>
